@@ -1,0 +1,6 @@
+# Personal settings (not shared)
+.claude/settings.local.json
+
+# OS files
+.DS_Store
+Thumbs.db
