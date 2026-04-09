@@ -13,6 +13,7 @@ That's it. The setup wizard handles everything:
 - Walks you through designing your assistant's personality
 - Connects Telegram so you can message it from your phone
 - Optionally hooks up email, calendar, and more
+- Opens your assistant's profile in the browser for final review
 - Launches your assistant
 
 The whole process takes about 15 minutes.
@@ -38,13 +39,18 @@ cd ~/Documents/my-assistant
 npm run setup
 ```
 
-## Edit Personality Directly
+## Edit Your Assistant's Profile
 
-Your assistant's personality lives in two files:
-- `my-identity.md` — name, personality, communication style, focus areas
-- `my-soul.md` — values, boundaries, what success looks like
+Open the profile dashboard anytime:
 
-Edit them in any text editor. Restart Claude Code for changes to take effect.
+```
+cd ~/Documents/my-assistant
+npm run dashboard
+```
+
+This opens a web page in your browser where you can view and edit your assistant's personality, voice, focus areas, quirks, boundaries, and more. Changes save directly — just restart Claude Code to apply them.
+
+You can also ask your assistant: "Open my profile page" and it will launch the dashboard for you.
 
 ## Need Help?
 

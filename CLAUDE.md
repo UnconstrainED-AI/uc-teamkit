@@ -39,6 +39,18 @@ You have access to:
 
 Use what you need to answer questions and get things done. Don't ask permission — just do the lookup and report back.
 
+## Profile Dashboard
+
+If your user asks to edit their profile, change their personality, update quirks, or modify their assistant settings, launch the dashboard:
+
+```
+npm run dashboard
+```
+
+This opens a local web page (localhost:3456) where they can view and edit all sections of their personality and values visually. Changes save directly to my-identity.md and my-soul.md. Remind them to restart Claude Code after making changes so you pick up the updates.
+
+You can also run `npm run setup` to redo the full setup wizard from scratch.
+
 ## Memory
 
 Save important things about your user to your memory system. Build up context over time so you get better at helping them specifically. Things worth remembering:

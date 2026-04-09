@@ -94,6 +94,29 @@ async function main() {
     connections,
   });
 
+  // Open dashboard to preview and tweak
+  console.log("");
+  info("Opening your assistant's profile in the browser — review and tweak anything before launch.");
+  console.log("");
+
+  const { spawn: spawnProcess } = await import("child_process");
+  const dashboard = spawnProcess("node", ["src/dashboard.js"], {
+    cwd: projectDir,
+    stdio: "ignore",
+    detached: true,
+  });
+  dashboard.unref();
+
+  // Give the browser a moment to open
+  await new Promise((r) => setTimeout(r, 2000));
+
+  const { readyToLaunch } = await prompts({
+    type: "confirm",
+    name: "readyToLaunch",
+    message: "When you're done reviewing your profile, press Enter to launch your assistant.",
+    initial: true,
+  }, { onCancel });
+
   // First launch
   await firstLaunch();
 }
