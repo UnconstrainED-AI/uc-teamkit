@@ -1,0 +1,14 @@
+{
+  "name": "uc-teamkit",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "setup": "node src/setup.js"
+  },
+  "dependencies": {
+    "chalk": "^5.4.0",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.0",
+    "prompts": "^2.4.2"
+  }
+}
