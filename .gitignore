@@ -4,3 +4,8 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+node_modules/
+.setup-state.json
+start.sh
+org-context.md
