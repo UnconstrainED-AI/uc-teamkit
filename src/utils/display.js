@@ -54,7 +54,8 @@ export function completionBanner(config) {
 
   console.log('');
   console.log('  Start each day:');
-  console.log(DIM('    ~/Documents/my-assistant/start.sh'));
+  console.log(DIM('    cd ~/Documents/my-assistant'));
+  console.log(DIM('    npm start'));
   console.log('');
   console.log('  Edit your profile:');
   console.log(DIM('    npm run dashboard'));

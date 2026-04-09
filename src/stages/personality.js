@@ -169,7 +169,7 @@ export async function runPersonalityInterview() {
     message: `How does ${name} communicate? (space to select, enter to confirm)`,
     choices: COMMUNICATION_STYLES.map((s) => ({ title: s, value: s })),
     hint: 'Select all that apply',
-    instructions: false,
+    instructions: '\n  Use arrow keys to move, space to select/deselect, enter to confirm',
   });
 
   // 5. UC Focus
@@ -179,7 +179,7 @@ export async function runPersonalityInterview() {
     message: 'What are your main focus areas at UnconstrainED?',
     choices: UC_FOCUS_AREAS.map((f) => ({ title: f, value: f })),
     hint: 'Select all that apply',
-    instructions: false,
+    instructions: '\n  Use arrow keys to move, space to select/deselect, enter to confirm',
   });
 
   // 6. Help with
@@ -189,7 +189,7 @@ export async function runPersonalityInterview() {
     message: `What should ${name} help you with most?`,
     choices: HELP_WITH_OPTIONS.map((h) => ({ title: h, value: h })),
     hint: 'Select all that apply',
-    instructions: false,
+    instructions: '\n  Use arrow keys to move, space to select/deselect, enter to confirm',
   });
 
   // 7. User name

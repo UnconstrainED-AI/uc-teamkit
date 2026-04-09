@@ -31,9 +31,9 @@ export async function runConnectionsSetup() {
   const { selected } = await prompts({
     type: 'multiselect',
     name: 'selected',
-    message: 'Which tools? (Space to select, Enter to confirm)',
+    message: 'Which tools?',
     choices: CONNECTIONS,
-    hint: 'Space to select',
+    instructions: '\n  Use arrow keys to move, space to select/deselect, enter to confirm',
   }, { onCancel });
 
   if (!selected || selected.length === 0) {

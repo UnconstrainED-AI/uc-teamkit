@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "setup": "node src/setup.js",
-    "dashboard": "node src/dashboard.js"
+    "dashboard": "node src/dashboard.js",
+    "start": "claude --channels plugin:telegram@claude-plugins-official"
   },
   "dependencies": {
     "chalk": "^5.4.0",

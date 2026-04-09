@@ -23,7 +23,8 @@ The whole process takes about 15 minutes.
 Start your assistant each morning:
 
 ```
-~/Documents/my-assistant/start.sh
+cd ~/Documents/my-assistant
+npm start
 ```
 
 Leave Terminal open. Your assistant is available as long as Claude Code is running.
