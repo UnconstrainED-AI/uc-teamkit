@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "setup": "node src/setup.js"
+    "setup": "node src/setup.js",
+    "dashboard": "node src/dashboard.js"
   },
   "dependencies": {
     "chalk": "^5.4.0",
