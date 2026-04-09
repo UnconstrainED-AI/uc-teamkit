@@ -1,5 +1,7 @@
 # Personal settings (not shared)
 .claude/settings.local.json
+.env
+.env*
 
 # OS files
 .DS_Store

@@ -1,7 +1,7 @@
 import fs from "fs-extra";
 import path from "path";
 import prompts from "prompts";
-import { banner, section, success, completionBanner } from "./utils/display.js";
+import { banner, success, info, completionBanner } from "./utils/display.js";
 import { runPersonalityInterview } from "./stages/personality.js";
 import { runTelegramSetup } from "./stages/telegram.js";
 import { runConnectionsSetup } from "./stages/connections.js";
