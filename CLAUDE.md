@@ -76,6 +76,18 @@ curl -s -H "X-API-KEY: YOUR_KEY" "https://public-api.gamma.app/v1.0/generations/
 
 4. When completed, share the `gammaUrl` with the user — they can view, edit, and export from there.
 
+**UnconstrainED image style:** Always include this in the API call unless the user requests otherwise:
+```json
+"imageOptions": {
+  "source": "ai",
+  "aiParams": {
+    "model": "flux_1_1_pro",
+    "imagePromptSuffix": "figurative illustrated, atey ghilain, storybook illustration, colors are greys oranges and blacks"
+  }
+}
+```
+This gives our presentations the UC visual identity — illustrated, warm, distinctive.
+
 **Tips:**
 - `textMode`: "generate" (AI expands your outline), "condense" (AI shortens), "preserve" (keeps your text as-is)
 - `format`: "presentation", "document", "webpage"
